@@ -219,7 +219,9 @@ export function SideMenu({
                         justifyContent: 'center',
                         justifyItems: 'center'
                       }}
-                      onClick={toggleDrawer}
+                      onClick={
+                        showChildrenLinks.length ? undefined : toggleDrawer
+                      }
                     >
                       <div
                         style={{
